@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.19.1"
+    "animejs": "^3.2.2",
+    "preact": "^10.19.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.6.0",

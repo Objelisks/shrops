@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 .card {
-  width: 50px;
-  height: 90px;
-  border-radius: 25%;
+  min-width: 120px;
+  min-height: 120px;
+  border-radius: 10px;
+  border: 1px solid red;
+  background-color: aliceblue;
+  font-family: 'Fredericka the Great', serif;
+  font-size: 20pt;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card.back {
+  background-color: blue;
+}
+
+.card.back * {
+  display: none;
+}
+
+.card .pips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.card .top-rank {
+  align-self: start;
+}
+.card .bottom-rank {
+  align-self: end;
+}
+
+
+.bg-pig {
+  position: absolute;
+  width: 75%;
+  top: -500px;
+  left: 25%;
 }
